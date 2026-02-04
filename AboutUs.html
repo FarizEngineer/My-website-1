@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+     <link rel="icon" href="images/Auraline logo.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+.backpic{
+   min-height: 100vh;
+  width: 100%;
+  background-image: url("images/BackAUs.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+ /* Container setup */
+.container {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Road */
+.road {
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+  text-align: center;
+}
+
+.road img {
+  width: 100%;
+  height: auto;
+}
+
+/* Supplier */
+.supp {
+  position: absolute;
+  bottom: 150px;
+  left: 50px;
+}
+
+.supp img {
+  width: 120px;
+}
+
+/* Customer */
+.cust {
+  position: absolute;
+  bottom: 150px;
+  right: 50px;
+}
+
+.cust img {
+  width: 120px;
+}
+
+/* Car */
+.car {
+  position: absolute;
+  bottom: 120px;
+  left: 80px;
+  animation: moveCar 6s linear infinite;
+}
+
+.car img {
+  width: 150px;
+}
+
+/* Arrow */
+.arrow {
+  position: absolute;
+  bottom: 260px;
+  left: 45%;
+  animation: arrowBlink 1.5s infinite;
+}
+
+.arrow img {
+  width: 100px;
+}
+
+/* Animation start */
+@keyframes moveCar {
+  from{
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(800px);
+  }
+}
+
+@keyframes arrowBlink {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+}
+
+
+    </style>
+</head>
+<body>
+   <!-- Navtabs start -->
+  <nav class="navbar position-relative" style="background-color:lightskyblue; height: 67px;">
+  <div class="container-fluid">
+
+    <!-- Back button -->
+    <i class="fa-solid fa-circle-arrow-left"
+       style="font-size: 28px; color:orangered; cursor: pointer; margin-left: 9px;"
+       onclick="window.location.href='Index.html'">
+    </i>
+
+    <!-- Center title -->
+    <h1 class="navbar-brand position-absolute top-50 start-50 translate-middle"
+        style="color:orangered; font-size: 32px; font-weight: 700;">
+      About us
+    </h1>
+
+  </div>
+</nav>
+   <!-- navtabs end -->
+    <!-- backpic start -->
+    <div class="backpic">
+      <!-- Main content start -->
+<section class="about-us" style="padding: 30px; font-family: Arial, sans-serif; line-height: 1.6;">
+
+  <p>
+   <mark style="background-color:orangered;"><strong>Welcome to AURALINE</strong> 🛍️</mark>
+  </p>
+
+  <p>
+    <strong>Auraline</strong> is an online e-commerce store offering a curated selection of
+    aesthetic fashion accessories, body care essentials, and useful lifestyle gadgets.
+    Our aim is to provide stylish, practical, and everyday products through a simple
+    and convenient online shopping experience.
+  </p>
+
+  <p>
+    We collaborate with trusted suppliers to bring you products such as bracelets and
+    fashion accessories, body care items including lotions, body mists, and glow serums,
+    as well as smart gadgets like keychain power banks. Each product is selected based
+    on quality, usability, and current trends.
+  </p>
+
+  <p>
+    Our store operates on a <strong>dropshipping model</strong>, meaning products are shipped
+    directly from our suppliers to your doorstep. This allows us to offer a wide range
+    of products while keeping costs reasonable and operations efficient.
+  </p>
+
+  <p>
+    We are committed to providing a reliable and customer-friendly shopping experience.
+    Your trust and satisfaction are important to us, and we continuously work to improve
+    our services based on customer feedback.
+  </p>
+
+</section>
+     <!-- Main content end -->
+      <!-- Animation work start -->
+       <div class="container">
+        <div class="main">
+          <div class="road"><img src="images/road-removebg-preview.png" alt=""></div>
+        <div class="car"><img src="images/deliver_car-removebg-preview.png" alt=""></div>
+        <div class="supp"><img src="images/supplier.png" alt=""></div>
+        <div class="cust"><img src="images/customer.png" alt=""></div>
+        <div class="arrow"><img src="images/Arrow-removebg-preview.png" alt=""></div>
+       </div>
+       </div>
+       <!-- Animation work end -->
+    </div>
+    <!-- backpic end -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 
+</body>
+</body>
+</html>

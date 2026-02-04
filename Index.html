@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURALINE</title>
+    <link rel="icon" href="images/Auraline logo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  /* Name carsell Animation 1 */
+.Animate1{
+    animation: Fadname 3s ease-out ;
+  }
+@keyframes Fadname {
+  from{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0px)
+    opacity: 1;
+  }
+}
+/* Animation 1 end */
+/* Logo Animation 2 */
+.logofade{
+  animation: logfade 2s ease-out;
+}
+@keyframes logfade{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 2;
+  }
+}
+/* Animation 2 end */
+/* Dropdown Animation 3 */
+.Animate3{
+  animation: move 1s forwards;
+}
+@keyframes move{
+  from{
+ transform: translateX(-25px);
+ opacity: 0;
+  }
+  to{
+transform: translateX(0px);
+opacity: 3;
+  }
+}
+/* Animation 3 end */
+
+</style>
+</head>
+<body>
+<!-- navbar start -->
+ <nav class="navbar navbar-expand-lg bg-tertiary" style="background-color:black;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href=""><div class="logofade"><img src="images/Auraline logo.png" style="width: 80px; height: 80px; margin-left: 65px;"></div></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle ms-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           <span style="color: goldenrod; font-family:Copperplate Gothic Bold; font-size:larger; font-weight: bolder;"> Home</span>
+          </a>
+          <ul class="dropdown-menu">
+            <div class="Animate3">
+              <li><a class="dropdown-item" href="AP.html" style="color:navy; font-family:Copperplate Gothic Bold; font-weight:bolder;">Aesthetic Essentials</a></li>
+            <li><a class="dropdown-item" href="BC.html" style="color:navy; font-family:Copperplate Gothic Bold; font-weight: bolder;">Bodycare</a></li>
+            <li><a class="dropdown-item" href="#" style="color:navy;font-family:Copperplate Gothic Bold; font-weight: bolder;">Gadgets</a></li>
+            </div>
+          </ul>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active ms-5" aria-current="page" href="AboutUs.html"><span style="color: goldenrod; font-family:Copperplate Gothic Bold; font-size:larger; font-weight: bolder; margin-left: 10px;">About us</span></a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active ms-5" aria-current="page" href="Feedback.html"><span style="color: goldenrod; font-family:Copperplate Gothic Bold ; font-size:larger; font-weight: bolder;  margin-left: 10px;">Feedback</span></a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active ms-5" aria-current="page" href="#"><span style="color: goldenrod; font-family: Copperplate Gothic Bold; font-size:larger; font-weight: bolder;  margin-left: 10px;">Blog</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: goldenrod;"><span style="font-family: Copperplate Gothic Bold;"></span></a>
+        </li>
+      </ul>
+          </div>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-warning" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+ <!-- navbar end -->
+  <!-- carousel start -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"  data-bs-interval="2000">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+      class="active"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+  </div>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="images/Carsel1.jpg" class="d-block w-100" style="height:550px;">
+      <div class="carousel-caption d-flex align-items-center justify-content-center">
+        <div class="Animate1"><h1 style="color: goldenrod; font-family:Copperplate Gothic Bold;" >Welcome to AURALINE Official </h1></div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="images/Carsel1.webp" class="d-block w-100" style="height:550px;">
+      <div class="carousel-caption">
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="images/carsel2.jpg" class="d-block w-100" style="height:550px;">
+      <div class="carousel-caption">
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button"
+    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button"
+    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+<!-- carousel end -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
+</body>
+</html>
